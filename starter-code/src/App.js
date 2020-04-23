@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import countries from './countries.json';
 import { Switch, Route } from 'react-router-dom';
-import CountryDetails from './components/CountryDetails.js';
+import CountryList from './components/CountryList.js';
 import { Link } from 'react-router-dom';
 import NavBar from './components/NavBar.js';
 import 'bootstrap/dist/css/bootstrap.css';
+import CountryDetails from './components/CountryDetails';
 
 class App extends Component {
     render () {
@@ -14,7 +15,7 @@ class App extends Component {
         <h1>WikiCountries!</h1>
         < NavBar />
         <Switch>
-          <Route exact path='/country/:id' component={(props) => <CountryDetails {...props} />}></Route>
+          <Route exact path='/' component={(props) => <CountryList {...props} />}></Route>
         </Switch>
       </div>
       );

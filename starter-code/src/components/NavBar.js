@@ -9,10 +9,17 @@ class NavBar extends Component {
     render() {
         return (
             <div>
-                <nav className="nav-style">
-                    <ul>
-                        <li><Link to='/'>Home</Link></li>
-                        <li><Link to='/country/:id'>Country Details</Link></li>
+                <nav className="navbar">
+                    <ul className="nav">
+                        <li className="nav-link">
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li className="nav-link">
+                            <Link to='/country'>Country List</Link>
+                        </li>
+                        <li className="nav-link">
+                            <Link to='/country/:id'>Country Details</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -21,3 +28,6 @@ class NavBar extends Component {
 }
 
 export default NavBar;
+
+
+
