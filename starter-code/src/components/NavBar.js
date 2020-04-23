@@ -12,13 +12,7 @@ class NavBar extends Component {
                 <nav className="navbar">
                     <ul className="nav">
                         <li className="nav-link">
-                            <Link to='/'>Home</Link>
-                        </li>
-                        <li className="nav-link">
-                            <Link to='/country'>Country List</Link>
-                        </li>
-                        <li className="nav-link">
-                            <Link to='/country/:id'>Country Details</Link>
+                            <Link to='/'>Country List</Link>
                         </li>
                     </ul>
                 </nav>

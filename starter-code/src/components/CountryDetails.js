@@ -14,9 +14,9 @@ class CountryDetails extends Component {
         return (
             <div>
                 <p>
-                Hello, I'm Country Details for:<br></br>
-                Country ID: {countryId}<br></br>
-                Country Official name: {theCountry.name.official}
+                <strong>Country Details</strong><br></br>
+                ID: {countryId}<br></br>
+                Official name: {theCountry.name.official}
                 </p>
             </div>
         );
